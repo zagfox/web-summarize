@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Web Page Summarize",
+    "version": "1.0",
+    "description": "Summarize active tab with external LLM.",
+    "permissions": [
+      "activeTab", 
+      "scripting",
+      "storage"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon":"images/summarization_icon_48.png"  
+    },
+    "icons": {
+        "16": "images/summarization_icon_16.png",
+        "32": "images/summarization_icon_32.png",
+        "48": "images/summarization_icon_48.png",
+        "128": "images/summarization_icon_128.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+    }
+}
